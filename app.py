@@ -6,4 +6,4 @@ st.title('Preços de Ações App')
 # Sidebar
 st.sidebar.header('Consulta')
 symbol = st.sidebar.text_input('Digite um ativo:', 'AAPL')
-st.pyplot(pli(symbol))
+st.pyplot_chart(pli(symbol))
