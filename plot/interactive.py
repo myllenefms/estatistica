@@ -20,9 +20,10 @@ def plot_line_i(ticker:str):
         data.reset_index(),
         x='Date',
         y=['Close', 'SMA', 'LMA'],
+        title = ticker,
         labels={'Close': 'Fechamento', 'Date': 'Data'},
         color_discrete_map= 
         {'Close' : 'black', 'SMA' :'blue', 'LMA': 'red'}
     )
-    
+
     return fig
